@@ -1,0 +1,10 @@
+server:
+  port: 3010
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:2010
+  application:
+    name: hystrix-dashboard

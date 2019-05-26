@@ -1,0 +1,28 @@
+server:
+  port: 8021
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:2010
+  application:
+    name: consumer-movie
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:1010/eureka/
+
+#feign默认没有开启hystrix，需要手动开启
+#此处配置会为全局开启配置
+

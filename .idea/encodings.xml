@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-movie" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-movie-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-turbine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider-user-ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider-user-sleuth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/register-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-api" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

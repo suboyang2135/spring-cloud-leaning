@@ -1,0 +1,34 @@
+server:
+  port: 8040
+
+spring:
+  application:
+    name: zuul-api
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:2010
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: ''
+
+
+#zuul配置
+#微服务自定义路径配置 zuul.routes.指定微服务的serviceId = 指定路径
+zuul:
+  routes:
+    provider-user: /users/**
+  thread-pool:
+    use-separate-thread-pools: true
+    thread-pool-key-prefix: gateway
