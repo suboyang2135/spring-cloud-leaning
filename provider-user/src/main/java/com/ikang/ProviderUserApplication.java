@@ -1,5 +1,6 @@
 package com.ikang;
 
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import com.ikang.dao.UserRepository;
 import com.ikang.entity.User;
 import org.springframework.boot.ApplicationRunner;
@@ -7,12 +8,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.math.BigDecimal;
 import java.util.stream.Stream;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableSwagger2
+@EnableSwaggerBootstrapUI
 public class ProviderUserApplication {
 
     public static void main(String[] args) {
